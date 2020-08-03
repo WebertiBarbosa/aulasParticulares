@@ -1,5 +1,34 @@
 {
   "teachers": [
-    
+    {
+      "id": 1,
+      "avatar_url": "http://www.google.com",
+      "name": "weberti",
+      "birth": 946684800000,
+      "escolaridade": "Ensino Superior Completo",
+      "type": "À distância",
+      "services": "body, steel",
+      "created_at": 1596484827318
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://www.google.com",
+      "name": "Weberti Luna Barbosa",
+      "birth": 949449600000,
+      "escolaridade": "Mestrado",
+      "type": "Presencial",
+      "services": "matemática, português",
+      "created_at": 1596484846821
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://source.unsplash.com/collection/517198/500x500",
+      "name": "Weberti Luna Barbosa",
+      "birth": 952041600000,
+      "escolaridade": "Ensino Médio Completo",
+      "type": "Presencial",
+      "services": "body, steel",
+      "created_at": 1596490883931
+    }
   ]
 }

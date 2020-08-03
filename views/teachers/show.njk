@@ -15,7 +15,7 @@
         </div>
         <div class="item">
             <div>Idade</div>
-            <div>{{ teacher.birth }}</div>
+            <div>{{ teacher.age }}</div>
         </div>
         <div class="item">
             <div>Grau de Escolaridade</div>
@@ -23,23 +23,22 @@
         </div>
         <div class="item">
             <div>Tipo de Aula</div>
-            <div>Presencial</div>
+            <div>{{ teacher.type }}</div>
         </div>
         <div class="item">
             <div>Acompanhamento</div>
             <div>
-                <span>Matemática</span> 
-                <span>Física</span>
+                {% for service in teacher.services %}
+                <span> {{ service }} </span> 
+                {% endfor %}
             </div>
         </div>
         <div class="item">
             <div>Desde</div>
-            <div>02/02/2020</div>
+            <div>{{ teacher.created_at }}</div>
         </div>
 
-        
-        
-
+        <a href="#" class='button'>Editar</a>
 
     </section>
 </div>
