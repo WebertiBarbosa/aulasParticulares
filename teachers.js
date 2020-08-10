@@ -3,6 +3,11 @@ const data = require('./data.json')
 const { age, date } = require('./utils')
 const { escolaridade } = require('./utils')
 
+exports.index = function(req, res){
+    return res.render('teachers/index', {teachers: data.teachers})
+}
+
+
 
 // show
 exports.show = function(req, res) {
