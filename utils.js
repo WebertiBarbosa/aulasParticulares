@@ -43,23 +43,23 @@ module.exports = {
     },
 
     schoolYear: function grade(schoolYear) {
-        if (schoolYear == "5º SF") {
+        if (schoolYear == "5º EF") {
             schoolYear = '5º Ano do Ensino Fundamental'
         }
 
-        if (schoolYear == "6º SF") {
+        if (schoolYear == "6º EF") {
             schoolYear = '6º Ano do Ensino Fundamental'
         }
 
-        if (schoolYear == "7º SF") {
+        if (schoolYear == "7º EF") {
             schoolYear = '7º Ano do Ensino Fundamental'
         }   
 
-        if (schoolYear == "8º SF") {
+        if (schoolYear == "8º EF") {
             schoolYear = '8º Ano do Ensino Fundamental'
         }
 
-        if (schoolYear == "9º SF") {
+        if (schoolYear == "9º EF") {
             schoolYear = '9º Ano do Ensino Fundamental'
         }
 

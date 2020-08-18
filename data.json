@@ -3,10 +3,10 @@
     {
       "avatar_url": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "email": "weberti@schoolmanager.com",
-      "name": "Weberti2",
+      "name": "Weberti",
       "birth": 949449600000,
       "gender": "M",
-      "schoolYear": "5º SF",
+      "schoolYear": "5º EF",
       "workload": "20",
       "id": 2
     },
@@ -14,18 +14,28 @@
       "id": 3,
       "avatar_url": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "email": "weberti2@schoolmanager.com",
-      "name": "Weberti3",
+      "name": "Weberti2",
       "birth": 952041600000,
       "gender": "M",
-      "schoolYear": "5º SF",
+      "schoolYear": "5º EF",
       "workload": "30"
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Weberti3",
+      "email": "weberti3@schoolmanager.com",
+      "birth": 1046649600000,
+      "gender": "M",
+      "schoolYear": "2º EM",
+      "workload": "40"
     }
   ],
   "teachers": [
     {
       "id": 2,
       "avatar_url": "https://images.unsplash.com/photo-1511629091441-ee46146481b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "Weberti Luna Barbosa",
+      "name": "Weberti ",
       "birth": 949449600000,
       "escolaridade": "Mestrado",
       "type": "Presencial",
@@ -35,7 +45,7 @@
     {
       "id": 3,
       "avatar_url": "https://images.unsplash.com/photo-1584277261846-c6a1672ed979?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "Weberti Luna Barbosa",
+      "name": "José",
       "birth": 952041600000,
       "escolaridade": "Ensino Médio Completo",
       "type": "Presencial",
@@ -45,7 +55,7 @@
     {
       "id": 4,
       "avatar_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "Kíssela Silva Oliveira Luna",
+      "name": "Maria",
       "birth": 954806400000,
       "escolaridade": "Doutorado",
       "type": "Presencial",
