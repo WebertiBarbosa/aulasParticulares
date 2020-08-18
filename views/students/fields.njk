@@ -1,110 +1,120 @@
 <div class="item">
-            <div>Avatar URL</div>
-            <div>
-                <input 
-                    type="url" 
-                    name="avatar_url" 
-                    placeholder='http://'
-                    value="{{ teacher.avatar_url }}"
-                >               
-            </div>
-        </div>
+    <div>Avatar URL</div>
+    <div>
+        <input 
+            type="url" 
+            name="avatar_url" 
+            placeholder='http://'
+            value="{{ student.avatar_url }}"
+        >               
+    </div>
+</div>
+
+<div class="item">
+    <div>Email</div>
+    <div>
+        <input 
+            type="email" 
+            name="email" 
+            value="{{ student.email }}"
+        >               
+    </div>
+</div>
         
+<div class="item">
+    <div>Nome</div>
+    <div>
+        <input
+            type="text"
+            name="name"
+            placeholder='Nome do Membro'
+            value="{{ student.name }}"
+        >                
+    </div>
+</div>
+
+<div class="item">
+    <div>Data de Nascimento</div>
+    <div>
+        <input 
+            type="date" 
+            name="birth"
+            value="{{ student.birth }}" 
+        >
+    </div>
+</div>
+
+<div class="item">
+    <div>Sexo</div>
+    <div>
+        <span>
+            <input 
+                type="radio" 
+                name="gender"
+                value="M" 
+                {% if student.gender == "M" %}
+                    checked
+                {% endif %}>Masculino
+        </span>
+        <span>
+            <input 
+                type="radio" 
+                name="gender"
+                value="F" 
+                {% if student.gender == "F" %}
+                    checked
+                {% endif %}>Feminino
+        </span>
         
-        <div class="item">
-            <div>Professor</div>
-            <div>
-                <input
-                    type="text"
-                    name="name"
-                    placeholder='Nome do Professor'
-                    value="{{ teacher.name }}"
-                >                
-            </div>
-        </div>
+    </div>
+</div>
 
 
-        <div class="item">
-            <div>Data de Nascimento</div>
-            <div>
-                <input 
-                    type="date" 
-                    name="birth"
-                    value="{{ teacher.birth }}" 
-                >
-            </div>
-        </div>
-        <div class="item">
-            <div>Grau de Escolaridade</div>
-            <div>
-                <select name="escolaridade">
-                    <option 
-                        value="Ensino Médio Completo"
-                        {% if teacher.escolaridade == 'Ensino Médio Completo'  %}
-                            selected
-                        {% endif %}
-                        >Ensino Médio Completo
-                    </option>
-                    <option 
-                        value="Ensino Superior Completo" 
-                        {% if teacher.escolaridade == 'Ensino Superior Completo' %}
-                            selected
-                        {% endif %}
-                        >Ensino Superior Completo
-                    </option>
-                    <option 
-                        value="Mestrado"
-                        {% if teacher.escolaridade == 'Mestrado' %}
-                            selected
-                        {% endif %}
-                        >Mestrado
-                    </option>
-                    <option 
-                        value="Doutorado"
-                        {% if teacher.escolaridade == 'Doutorado' %}
-                            selected
-                        {% endif %}
-                        >Doutorado
-                    </option>
-                    
-                </select>
-                
-            </div>
-        </div>
-        <div class="item">
-            <div>Tipo de Aula</div>
-            <div>
-                <span><input 
-                    type="radio" 
-                    name="type" 
-                    value='Presencial' 
-                    {% if teacher.type == 'Presencial'  %}
-                    checked
-                    {% endif %}
-                    >Presencial
-                </span>
-                <span><input 
-                    type="radio" 
-                    name="type" 
-                    value='À distância'
-                    {% if teacher.type == 'À distância'  %}
-                    checked
-                    {% endif %}
-                    >À distância
-                </span>
-                
-            </div>
-        </div>
-        <div class="item">
-            <div>Área de Atuação</div>
-            <div>
-                <input 
-                    type="text" 
-                    name="services"
-                    placeholder='Separe as áreas de atuação por vírgula.'
-                    value="{{ teacher.services }}" 
-                >
-            </div>
-        </div>
 
-        <button type='submit'>Salvar</button>
+<div class="item">
+    <div>Ano Escolar</div>
+    <div>
+        <select name="schoolYear">
+            <option value="5º" {% if student.schoolYear == "5º" %} select {% endif %}>
+                5º Ano do Ensino Fundamental
+            </option>
+            <option value="6º" {% if student.schoolYear == "6º" %} select {% endif %}>
+                6º Ano do Ensino Fundamental
+            </option>
+            <option value="7º" {% if student.schoolYear == "7º" %} select {% endif %}>
+                7º Ano do Ensino Fundamental
+            </option>
+            <option value="8º" {% if student.schoolYear == "8º" %} select {% endif %}>
+                8º Ano do Ensino Fundamental
+            </option>
+            <option value="9º" {% if student.schoolYear == "9º" %} select {% endif %}>
+                9º Ano do Ensino Fundamental
+            </option>
+            <option value="1º" {% if student.schoolYear == "1º" %} select {% endif %}>
+                1º Ano do Ensino Médio
+            </option>
+            <option value="2º" {% if student.schoolYear == "2º" %} select {% endif %}>
+                2º Ano do Ensino Médio
+            </option>
+            <option value="3º" {% if student.schoolYear == "3º" %} select {% endif %}>
+                3º Ano do Ensino Médio
+            </option>
+
+
+        </select>
+    </div>
+</div>
+
+<div class="item">
+    <div>Carga Horária Semanal</div>
+    <div>
+        <input 
+            type="number" 
+            name="workload"
+            value="{{ student.workload }}" 
+        >
+    </div>
+</div>
+
+
+<button type='submit'>Salvar</button>
