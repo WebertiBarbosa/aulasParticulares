@@ -45,24 +45,21 @@ exports.post = function(req, res){
         }
     }
 
-    let { avatar_url, birth, escolaridade, type,  name, services } = req.body
-
-    birth = Date.parse(birth)
+    birth = Date.parse(req.body.birth)
     const created_at = Date.now()
-    const id = Number(data.students.length + 1)
 
-    
+    let id = 1
+    const lastStudent = data.students[data.students.length - 1]
+
+    if (lastStudent) {
+        id = lastStudent.id + 1
+    }
 
     // [{...}]
     data.students.push({
         id,
-        avatar_url,
-        name,
-        birth,
-        escolaridade,
-        type,
-        services,
-        created_at,
+        ...req.body,
+        birth
     })
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
