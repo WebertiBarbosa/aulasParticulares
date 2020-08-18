@@ -1,47 +1,27 @@
 {
   "students": [
     {
-      "avatar_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "email": "weberticf@gmail.com",
-      "name": "Weberti",
-      "birth": 946684800000,
-      "gender": "M",
-      "schoolYear": "5º",
-      "workload": "10",
-      "id": 1
-    },
-    {
-      "avatar_url": "http://www.google.com",
+      "avatar_url": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "email": "weberticf@gmail.com",
       "name": "Weberti2",
       "birth": 949449600000,
       "gender": "M",
-      "schoolYear": "8º",
+      "schoolYear": "5º SF",
       "workload": "20",
       "id": 2
     },
     {
       "id": 3,
-      "avatar_url": "http://www.google.com",
+      "avatar_url": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "email": "weberticf@gmail.com",
       "name": "Weberti3",
       "birth": 952041600000,
       "gender": "M",
-      "schoolYear": "3º",
+      "schoolYear": "5º SF",
       "workload": "30"
     }
   ],
   "teachers": [
-    {
-      "id": 1,
-      "avatar_url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "weberti",
-      "birth": 946684800000,
-      "escolaridade": "Ensino Superior Completo",
-      "type": "À distância",
-      "services": "body, steel",
-      "created_at": 1596484827318
-    },
     {
       "id": 2,
       "avatar_url": "https://images.unsplash.com/photo-1511629091441-ee46146481b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",

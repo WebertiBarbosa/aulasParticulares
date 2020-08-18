@@ -21,7 +21,13 @@ module.exports = {
         const month = `0${date.getUTCMonth() + 1}`.slice(-2)
         const day = `0${date.getUTCDate()}`.slice(-2)
 
-        return `${year}-${month}-${day}`
+        return {
+            day,
+            month,
+            year,
+            iso: `${year}-${month}-${day}`,
+            birthDay: `${day}/${month}`
+        }
 
 
     },
@@ -34,6 +40,45 @@ module.exports = {
             escolaridade = 'superior'
         }
         return escolaridade
+    },
+
+    schoolYear: function grade(schoolYear) {
+        if (schoolYear == "5º SF") {
+            schoolYear = '5º Ano do Ensino Fundamental'
+        }
+
+        if (schoolYear == "6º SF") {
+            schoolYear = '6º Ano do Ensino Fundamental'
+        }
+
+        if (schoolYear == "7º SF") {
+            schoolYear = '7º Ano do Ensino Fundamental'
+        }   
+
+        if (schoolYear == "8º SF") {
+            schoolYear = '8º Ano do Ensino Fundamental'
+        }
+
+        if (schoolYear == "9º SF") {
+            schoolYear = '9º Ano do Ensino Fundamental'
+        }
+
+        if (schoolYear == "1º EM") {
+            schoolYear = '1º Ano do Ensino Médio'
+        }
+
+        if (schoolYear == "2º EM") {
+            schoolYear = '2º Ano do Ensino Médio'
+        }
+
+        if (schoolYear == "3º EM") {
+            schoolYear = '3º Ano do Ensino Médio'
+        }
+
+        return schoolYear
+
     }
+
+
     
 }

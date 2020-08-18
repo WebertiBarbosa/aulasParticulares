@@ -9,18 +9,7 @@
         >               
     </div>
 </div>
-
-<div class="item">
-    <div>Email</div>
-    <div>
-        <input 
-            type="email" 
-            name="email" 
-            value="{{ student.email }}"
-        >               
-    </div>
-</div>
-        
+       
 <div class="item">
     <div>Nome</div>
     <div>
@@ -30,6 +19,17 @@
             placeholder='Nome do Membro'
             value="{{ student.name }}"
         >                
+    </div>
+</div>
+
+<div class="item">
+    <div>Email</div>
+    <div>
+        <input 
+            type="email" 
+            name="email" 
+            value="{{ student.email }}"
+        >               
     </div>
 </div>
 
@@ -75,29 +75,29 @@
     <div>Ano Escolar</div>
     <div>
         <select name="schoolYear">
-            <option value="5º" {% if student.schoolYear == "5º" %} select {% endif %}>
+            <option value="5º SF" {% if student.schoolYear == "5º SF" %} select {% endif %}>
                 5º Ano do Ensino Fundamental
             </option>
-            <option value="6º" {% if student.schoolYear == "6º" %} select {% endif %}>
+            <option value="6º SF" {% if student.schoolYear == "6º SF" %} select {% endif %}>
                 6º Ano do Ensino Fundamental
             </option>
-            <option value="7º" {% if student.schoolYear == "7º" %} select {% endif %}>
+            <option value="7º SF" {% if student.schoolYear == "7º SF" %} select {% endif %}>
                 7º Ano do Ensino Fundamental
             </option>
-            <option value="8º" {% if student.schoolYear == "8º" %} select {% endif %}>
+            <option value="8º SF" {% if student.schoolYear == "8º SF" %} select {% endif %}>
                 8º Ano do Ensino Fundamental
             </option>
-            <option value="9º" {% if student.schoolYear == "9º" %} select {% endif %}>
+            <option value="9º SF" {% if student.schoolYear == "9º SF" %} select {% endif %}>
                 9º Ano do Ensino Fundamental
             </option>
-            <option value="1º" {% if student.schoolYear == "1º" %} select {% endif %}>
+            <option value="1º EM" {% if student.schoolYear == "1º EM" %} select {% endif %}>
                 1º Ano do Ensino Médio
             </option>
-            <option value="2º" {% if student.schoolYear == "2º" %} select {% endif %}>
+            <option value="2º EM" {% if student.schoolYear == "2º EM" %} select {% endif %}>
                 2º Ano do Ensino Médio
             </option>
-            <option value="3º" {% if student.schoolYear == "3º" %} select {% endif %}>
-                3º Ano do Ensino Médio
+            <option value="3º EM" {% if student.schoolYear == "3º EM" %} select {% endif %}>
+                3º Ano do Ensino Médio 
             </option>
         </select>
     </div>
