@@ -7,8 +7,6 @@ exports.index = function(req, res){
     return res.render('students/index', {students: data.students})
 }
 
-
-
 // show
 exports.show = function(req, res) {
     const { id } = req.params
@@ -75,7 +73,6 @@ exports.post = function(req, res){
 }
 
 // edit
-
 exports.edit = function(req, res) {
     const { id } = req.params
 
@@ -95,7 +92,6 @@ exports.edit = function(req, res) {
 }
 
 // put
-
 exports.put = function(req, res) {
     const { id } = req.body
     let index = 0
@@ -126,7 +122,6 @@ exports.put = function(req, res) {
 }
 
 // delete
-
 exports.delete = function(req, res) {
     const { id } = req.body
 
